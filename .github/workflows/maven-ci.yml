@@ -14,10 +14,10 @@ jobs:
   # Runs the Maven test phase on the project
   maven_test:
     - name: Cache build
-    uses: actions/cache@v3
-    with:
-      key: cached-build-${{github.sha}}
-      path: .
+      uses: actions/cache@v3
+      with:
+        key: cached-build-${{github.sha}}
+        path: .
 
     runs-on: ubuntu-latest
 
